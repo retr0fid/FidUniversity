@@ -1,0 +1,271 @@
+header{
+	background:brown;
+	color: white;
+}
+
+.title{
+	
+	padding-bottom: 2em;
+	text-align: center;
+	max-height: 150px;
+
+
+
+}
+h1{
+	font-size: 6.5em;
+	
+	margin:0;
+	font-family: 'DM Serif Text', serif;
+}
+.title p{
+	font-size: 1.2em;
+	color:lightgreen;
+	margin:0;
+	font-family: 'Caveat', cursive;
+
+}
+header ul{
+	display: flex;
+	background: midnightblue;
+	margin:0;
+	justify-content: space-around;
+	padding-bottom: .5em;
+
+}
+nav ul li{
+	list-style: none;
+	
+	padding: 0.2em;
+	font-size: 1.5em;
+	margin:0;
+}
+nav ul li:hover{
+	
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+
+label{
+	margin:1em;
+	font-size: 4em;
+	line-height: 70px;
+	display: none;
+
+}
+#toggle{
+	display: none;
+}
+.dropdown-1{
+	display: none;
+	font-size: 0.55em;
+}
+nav ul li:hover .dropdown-1 {
+	display: block;
+	margin:0;
+	width:15%;
+	padding: 0.8em;
+	position:absolute;
+	text-align: left;
+}
+nav ul li:hover .dropdown-1 ul{
+	display: block;
+	padding:1em;
+}
+nav ul li:hover .dropdown-1 ul li{
+	background:transparent;
+	
+	border-radius: 0;
+
+}
+nav ul li:hover .dropdown-1 ul li:hover{
+	background: rgb(37, 52, 128);
+}
+/*body*/
+main{
+	margin:0;
+	background: lightgrey;
+
+	
+
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin:0 1em 1em 0;
+}
+.fidimage{
+	background: purple;
+	color: white;
+	order: 1;
+	text-align: center;
+	
+}
+.fidimage h1{
+	font-size: 4em;
+	color: white;
+
+}
+.fidimage h2{
+	color:orange;
+}
+.fidimage img{
+	width: 90%;
+	max-height: 400px;
+	object-fit: cover;
+	padding: 0.5em;
+
+
+}
+
+.grid-container{
+	background: lightyellow;
+	padding: 1em;
+}
+.speech{
+	padding: 2em;
+	font-size: 1.3em;
+}
+.speech h2{
+	color: purple;
+	font-size: 2em;
+}
+.subtitle{
+	color:purple;
+	margin:0;
+}
+.backbutton{
+	background: green;
+	color: white;
+	text-align: center;
+	border-radius:10px;
+	margin:0;
+	padding: 1.2em;
+	
+}
+footer{
+	background: lightyellow;
+	margin:0;
+	text-align: center;
+}
+footer p{
+	background: rgb(39, 21, 51);
+	color: rgb(100, 87, 110);
+	height: 50px;
+	padding-top: 0.5em;
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-around;
+}
+.fc-1{
+	
+	padding: 1em;
+	margin:1em;
+}
+.fc-1 ul {
+	text-align: left;
+	padding-left: 1em;
+	margin:0;
+	font-size: .85em;
+	color: darkblue;
+}
+.fc-1 h2{
+	font-size: 1.3em;
+	color:darkblue;
+	margin-bottom:1em; 
+}
+@media (max-width: 1260px){
+	.title{
+	
+	padding: 5em;
+	text-align: center;
+
+	
+
+
+
+	}
+	h1{
+	font-size: 6.8em;
+	
+	margin:0;
+	font-family: 'DM Serif Text', serif;
+	}
+	.title p{
+	font-size: 2.5em;
+	color:lightgreen;
+	margin:0;
+	font-family: 'Caveat', cursive;
+
+	}
+	nav ul li a{
+	font-size: 1em;
+	}
+	
+
+	nav ul li:hover .dropdown-1 {
+	display: block;
+	margin:0;
+	width:80%;
+	padding: 3em;
+	position:absolute;
+	
+    }
+    nav ul li:hover .dropdown-1 ul li{
+	background:transparent;
+	padding: 1em;
+	border-radius: 0;
+	font-size:0.85em;
+	margin:0;
+
+ 	}
+ 	.grid-container{
+ 		grid-template-columns: 1fr ;
+ 	}
+ 	.fidimage{
+ 		order: 1;
+
+ 	}
+ 	.speech{
+ 		order:2;
+ 	}
+	
+	label{
+		display: block;
+		cursor: pointer;
+		width: 35px;
+		float: right;
+		color:grey;
+		font-size:;
+	}
+	nav{
+		clear: both;
+		max-height: 0px;
+		transition: max-height 1s ease-out;
+
+		
+	}
+	nav ul {
+
+		display: block;
+		font-size:2em;
+		text-align: left;
+
+
+	}
+	
+	
+	#toggle:checked + nav{
+		display: block;
+		max-height: 500px;
+
+	}
+	.footer-content{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}

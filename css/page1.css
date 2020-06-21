@@ -1,0 +1,87 @@
+body{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	
+}
+.container{
+	width: 80%;
+	min-width: 500px;
+	border:10px solid purple;
+}
+span{
+	color: blue;
+	font-size: 1.5em;
+}
+
+h1{
+	color:purple;
+}
+.textbox{
+	border:5px solid black;
+	background: lightgrey;
+	/*display: flex;*/
+	text-align: center;
+	
+
+}
+.textbox h1{
+	
+}
+.image{
+	width: 30%;
+	border:5px solid black;
+	display: inline-block;
+
+}
+
+img{
+	width:100%;
+}
+h2{
+	color: violet;
+}
+
+.con{
+
+	width: 95%;
+	margin:0 auto;
+	padding: 1em;
+
+
+
+
+}
+.para{
+	display:flex;
+	justify-content: space-between;
+	background: lightgrey;
+	padding: 1em;
+	margin:1em;
+	
+
+	/*border:5px solid black;*/
+
+}
+
+.col{
+	margin:1em;
+	padding: 1em;
+	width: 30%;
+}
+#different{
+	background: purple;
+	color:white;
+	width: 70%;
+	
+}
+@media   (max-width:1000px){
+	.para{
+		flex-direction: column;
+	}
+	.col{
+		width: 80%;
+	}
+}
+	
+	

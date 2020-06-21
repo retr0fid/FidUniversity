@@ -1,0 +1,56 @@
+.menu{
+	float: right;
+	border:3px solid green;
+	padding:0;
+	text-align: center;
+	margin:0 2em 0 0;
+	width: 50%;
+}
+.menu a{
+	text-decoration: none;
+	padding: 1em;
+	margin:1em;
+	font-size: 1.2em;
+	color: grey;
+}
+.nav{
+	/*float:right;*/
+	text-align:right;
+	line-height: 70px;
+	height: 70px;
+}
+span{
+	color:darkgreen;
+}
+
+label{
+	margin:0 2em 0 0;
+	font-size: 2em;
+	line-height: 2em;
+	display: none;
+}
+#toggle{
+	display: none;
+}
+@media only screen and (max-width: 1000px){
+	label{
+		display: block;
+		cursor: pointer;
+		width: 26px;
+		float: right;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+	.menu a{
+		display: block;
+		border-bottom:2px solid green;
+		font-size: 2em;
+		clear:right;
+	}
+	#toggle:checked + .menu{
+		display: block;
+	}
+}
